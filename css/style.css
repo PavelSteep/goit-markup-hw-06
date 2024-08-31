@@ -325,20 +325,21 @@ main {
 /**=================HERO-SECTION========== */
 
 .hero-section {
-  /* width: 320px;
-  height: auto; */
+  width: 320px;
+  height: auto;
   /* max-width: 1440px; */
   /* height: auto; */
   /* padding-top: 60px;
   padding-bottom: 60px; */
-  padding: 60px 0;
   margin: 0 auto;
 }
 
 .hero-container {
   width: 100%;
+  height: auto;
   padding-left: 0;
   padding-right: 0;
+  margin: 0 auto;
 }
 
 .hero-wrap {
@@ -365,7 +366,7 @@ main {
       rgba(17, 17, 17, 0.6),
       rgba(17, 17, 17, 0.6)
     ), 
-    url(../images/main-bg-mob-2x.jpg);
+    url(../images/hero-bg-mob-2x.jpg);
   }
 }
 
@@ -1190,13 +1191,23 @@ span.check-span {
     text-align: left;
   }
 
+  .hero-section {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .hero-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .hero-wrap {
     background-image:linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
       ), 
-      url(../images/hero-bg-tab.jpg);
-      /* padding: 136px 112px; */
+      url(../images/hero-bg-tab-2x.jpg);
+      background-position: center center;
   }
 
   .hero-title {
@@ -1247,12 +1258,22 @@ span.check-span {
     width: 1158px;
   }
 
+  .hero-section {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .hero-wrap {
     background-image:linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
     ), 
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-2x.jpg);
   }
 
   .features-list {
