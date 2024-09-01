@@ -445,7 +445,8 @@ main {
 
 .feature-item {
   /* width: calc((100% - 72px) / 4); */
-  width: 100%;
+  /* width: 100%; */
+  width: 320px;
   padding-left: 16px;
   padding-right: 16px;
 }
