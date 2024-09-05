@@ -193,10 +193,6 @@ img {
   stroke: #111;
 }
 
-.mob-menu-top {
-  
-}
-
 .mob-menu {
   position: fixed;
   top: 0;
@@ -212,9 +208,14 @@ img {
   visibility: hidden;
 }
 
+.mob-menu-top {
+  margin-bottom: 50px;
+  /* margin-bottom: 168px; */
+}
+
 .menu-close-btn {
   display: block;
-  /* margin-left: auto; */
+  margin-left: auto;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -241,10 +242,9 @@ img {
 }
 
 .mob-menu-wrap-bottom {
-  margin-top: 168px;
   background-color: #fff;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   padding-left: 16px;
 }
 
