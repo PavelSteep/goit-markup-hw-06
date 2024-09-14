@@ -318,19 +318,6 @@ img {
   padding: 5px;
 }
 
-
-
-
-/**=======================================*/
-
-/**=================MAIN================= */
-
-main {
-  /* padding: 188px 0 188px; */
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
-}
-
 /**========================================*/
 
 /**=================HERO-SECTION========== */
@@ -1266,6 +1253,18 @@ span.check-span {
       background-position: center center;
   }
 
+  
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+      rgba(17, 17, 17, 0.6),
+      rgba(17, 17, 17, 0.6)
+    ), 
+    url(../images/hero-bg-tab-2x.jpg);
+  }
+}
+
   .hero-title {
     font-size: 56px;
   }
@@ -1397,6 +1396,18 @@ span.check-span {
     ), 
     url(../images/hero-bg-2x.jpg);
   }
+
+  
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+      rgba(17, 17, 17, 0.6),
+      rgba(17, 17, 17, 0.6)
+    ), 
+    url(../images/hero-bg-2x.jpg);
+  }
+}
 
   .feature-item-title {
     font-size: 20px;
