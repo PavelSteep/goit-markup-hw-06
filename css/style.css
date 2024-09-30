@@ -83,6 +83,8 @@ img {
   max-width: 100%;
   height: auto;
   background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header-container {
@@ -361,7 +363,8 @@ img {
 }
 
 .hero-title{
-  max-width: 496px;
+  /* max-width: 496px; */
+  max-width: 216px;
   /* font-size: 56px; */
   font-size: 36px;
   font-weight: 700;
@@ -498,6 +501,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 72px;
 }
 
 .team-item {
@@ -622,6 +626,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 48px;
 }
 
 .portfolio-item {
@@ -700,7 +705,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 108px;
+  /* padding-left: 108px; */
 }
 
 .footer-content {
@@ -829,7 +834,7 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  padding: 8px 80px 8px 16px;
+  padding: 8px 212px 8px 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
@@ -1205,6 +1210,7 @@ span.check-span {
 }
 
   .hero-title {
+    max-width: 496px;
     font-size: 56px;
   }
 
@@ -1236,7 +1242,7 @@ span.check-span {
 
   .portfolio-list {
     flex-direction: row;
-    gap: 40px 24px;
+    gap: 72px 24px;
   }
 
   .portfolio-item {
@@ -1262,7 +1268,7 @@ span.check-span {
   }
 
   .footer-paragraph {
-    width: 237px;
+    width: 369px;
   }
 
   .subscribe-form {
@@ -1407,7 +1413,7 @@ span.check-span {
 
   .footer-link {
     text-align: left;
-    margin-left: -144px;
+    margin-right: auto;
   }
 
   .subscribe-form {
