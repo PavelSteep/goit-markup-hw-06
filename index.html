@@ -814,10 +814,10 @@
             />
             <button class="subscribe-button" type="submit">
               Subscribe
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-Frame-3"></use>
-              </svg>
             </button>
+              <!-- <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg> -->
           </form>
         </div>
       </div>
@@ -893,22 +893,23 @@
             ></textarea>
           </div>
           <div class="modal-check">
-            <input
+            <span class="check-span"></span>
+            <!-- <input
               type="checkbox"
               id="user-privacy"
               value="true"
               name="user-privacy"
               class="visually-hidden modal-input-check"
-            />
-            <label class="check-text" for="user-privacy">
-              I accept the terms and conditions of the
-              <span class="check-span">
-                <svg class="check-text-icon" width="10" height="8">
+            /> -->
+            <div class="check-content">
+              <label class="check-text" for="user-privacy">
+                <span class="text-line">I accept the terms and conditions of the</span>
+                <!-- <svg class="check-text-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Checkbox"></use>
-                </svg>
-              </span>
+                </svg> -->
               <a class="check-link">Privacy Policy</a>
-            </label>
+              </label>
+            </div>
           </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
