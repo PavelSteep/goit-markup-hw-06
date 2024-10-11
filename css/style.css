@@ -707,7 +707,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-left: 108px; */
 }
 
 .footer-content {
@@ -742,7 +741,6 @@ img {
   color: #ffffff;
   margin-top: 16px;
   text-align: left;
-  /* margin-right: 30px; */
 }
 
 .footer-icons {
@@ -758,7 +756,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:#ffffff;
-  /* margin-bottom: 16px; */
   text-align: center;
   margin: 0 auto;
 }
@@ -982,7 +979,6 @@ img {
   background-color: transparent;
   outline: transparent;
   padding-left: 38px;
-  /* margin-bottom: 8px; */
   color: teal;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -997,6 +993,8 @@ img {
 }
 
 .modal-input-wrap {
+  display: flex;
+    align-items: center;
   position: relative;
   margin-bottom: 16px;
 }
@@ -1030,6 +1028,17 @@ img {
   top: 50%;
   transform: translate(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon-first {
+  margin-right: 8px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 15px;
+  background-color: rgba(46, 47, 66, 1);
+  margin-left: -328px;
 }
 
 .modal-comment {
@@ -1068,41 +1077,41 @@ textarea.modal-text {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  /* margin-bottom: 24px; */
   margin: 20px 0;
 }
 
-.visually-hidden {
-  display: none;
+.modal-check input[type="checkbox"]:checked + .check-span {
+  background-color: #007BFF;
+  border-color: #007BFF;
 }
 
-/* .modal-check input:checked + label .check-span {
-  background-color: #404bbf;
-  border: none !important;
-  fill: #F4F4FD !important;
-} */
+.modal-check input[type="checkbox"]:checked + .check-span::after {
+  opacity: 1;
+}
 
-span.check-span {
+.check-span {
   display: inline-block;
   width: 16px;
   height: 16px;
   padding: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4) !important;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   position: relative;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   flex-shrink: 0;
-  /* margin-right: 2px; */
-  box-sizing: border-box;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* fill: transparent !important; */
 }
 
-.visually-hidden:checked + .check-span {
-  background-color: #007BFF;
-  border-color: #007BFF;
+.visually-hidden {
+  /* display: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .check-span::after {
@@ -1119,20 +1128,17 @@ span.check-span {
   transition: opacity 0.3s;
 }
 
-.visually-hidden:checked + .check-span::after {
+input[type="checkbox"]:checked + .check-span {
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+input[type="checkbox"]:checked + .check-span::after {
   opacity: 1;
 }
 
-/* .check-text-icon {
-  width: 10px;
-  height: 8px;
-  background-color: #404bbf;
-} */
-
 .check-content {
   max-width: 230px;
-  flex-grow: 1;
-  /* text-align: center; */
   padding: 8px;
   flex-direction: column;
 }
@@ -1178,15 +1184,10 @@ span.check-span {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  /* letter-spacing: 0.04em; */
   text-align: center;
-  /* margin: 0 auto; */
   color: #FFFFFF;
-  /* margin-top: 24px; */
   cursor: pointer;
   margin: 24px auto 0;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
-  /* padding: 0; */
   border: none;
   margin-top: 24px; 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1197,11 +1198,6 @@ span.check-span {
   background-color: #404bbf;
   /* border: none; */
 }
-
-/* .modal-btn:hover .modal-btn-icon,
-.modal-btn:focus .modal-btn-icon {
-  fill: #ffffff;
-} */
 
 /**=======================================*/
 
@@ -1315,8 +1311,6 @@ span.check-span {
 
   .footer-wrap-top {
     display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -1350,6 +1344,10 @@ span.check-span {
     display: block;
     margin-top: 0;
     text-align: left;
+  }
+
+  .modal {
+    width: 360px;
   }
 
 }
@@ -1446,7 +1444,6 @@ span.check-span {
     display: flex;
     justify-content: center;
     align-self: start;
-    /* align-items: center; */
   }
 
   .footer-container {
@@ -1498,6 +1495,10 @@ span.check-span {
   .subscribe-text {
     text-align: left;
     margin-left: 0;
+  }
+
+  .modal {
+    width: 408px;
   }
 
 }
