@@ -825,7 +825,7 @@
 
     <!-- -------------backdrop-------------- -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg width="8" height="8" class="modal-close-icon">
@@ -917,25 +917,28 @@
       </div>
     </div>
     <script>
-    const customCheckbox = document.querySelector('.check-span');
-const checkbox = document.getElementById('user-privacy');
+      const customCheckbox = document.querySelector(".check-span");
+      const checkbox = document.getElementById("user-privacy");
 
-// Переключение состояния по клику
-customCheckbox.addEventListener('click', () => {
-  checkbox.checked = !checkbox.checked;
-  customCheckbox.classList.toggle('checked', checkbox.checked);
-});
+      // Переключение состояния по клику
+      customCheckbox.addEventListener("click", () => {
+        checkbox.checked = !checkbox.checked;
+        customCheckbox.classList.toggle("checked", checkbox.checked);
+      });
 
-// Обработка фокуса и нажатия Enter
-customCheckbox.addEventListener('focus', () => customCheckbox.classList.add('focused'));
-customCheckbox.addEventListener('blur', () => customCheckbox.classList.remove('focused'));
-customCheckbox.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    checkbox.checked = !checkbox.checked;
-    customCheckbox.classList.toggle('checked', checkbox.checked);
-  }
-});
-
+      // Обработка фокуса и нажатия Enter
+      customCheckbox.addEventListener("focus", () =>
+        customCheckbox.classList.add("focused")
+      );
+      customCheckbox.addEventListener("blur", () =>
+        customCheckbox.classList.remove("focused")
+      );
+      customCheckbox.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          checkbox.checked = !checkbox.checked;
+          customCheckbox.classList.toggle("checked", checkbox.checked);
+        }
+      });
     </script>
   </body>
 </html>
