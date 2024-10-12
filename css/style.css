@@ -1128,6 +1128,12 @@ textarea.modal-text {
   transition: opacity 0.3s;
 }
 
+/* Стили для состояния фокуса */
+.check-span.focused {
+  outline: 2px solid #007BFF;
+  outline-offset: 2px;
+}
+
 input[type="checkbox"]:checked + .check-span {
   background-color: #007BFF;
   border-color: #007BFF;
@@ -1135,6 +1141,12 @@ input[type="checkbox"]:checked + .check-span {
 
 input[type="checkbox"]:checked + .check-span::after {
   opacity: 1;
+}
+
+input[type="checkbox"]:focus + .check-span {
+  outline: 2px solid #007BFF;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
 }
 
 .check-content {
@@ -1499,6 +1511,7 @@ input[type="checkbox"]:checked + .check-span::after {
 
   .modal {
     width: 408px;
+    min-height: 584px;
   }
 
 }
