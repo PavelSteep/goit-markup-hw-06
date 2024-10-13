@@ -1038,12 +1038,12 @@ img {
   width: 1px;
   height: 15px;
   background-color: rgba(46, 47, 66, 1);
-  margin-left: -328px;
+  margin-left: -242px;
 }
 
-.modal-comment {
+/* .modal-comment {
   margin-bottom: 16px;
-}
+} */
 
 textarea.modal-text {
   width: 100%;
@@ -1077,7 +1077,7 @@ textarea.modal-text {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  margin: 20px 0;
+  /* margin-top: 16px; */
 }
 
 .modal-check input[type="checkbox"]:checked + .check-span {
@@ -1166,7 +1166,7 @@ input[type="checkbox"]:focus + .check-span {
 .text-line {
   display: inline;
   white-space: nowrap;
-  margin-right: px;
+  /* margin-right: px; */
   /* display: block; */
 }
 
@@ -1201,7 +1201,7 @@ input[type="checkbox"]:focus + .check-span {
   cursor: pointer;
   margin: 24px auto 0;
   border: none;
-  margin-top: 24px; 
+  /* margin-top: 24px;  */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1359,7 +1359,56 @@ input[type="checkbox"]:focus + .check-span {
   }
 
   .modal {
-    width: 360px;
+    width: 408px;
+    min-height: 584px;
+  }
+
+  .vertical-line {
+    margin-left: -328px;
+  }
+
+  .modal-comment {
+    margin-bottom: 0px;
+  }
+
+  .modal-check {
+    margin-bottom: 12px;
+  }
+
+  .check-span {
+    margin-right: 8px;
+  }
+
+  .check-content {
+    max-width: 338px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+
+  .check-text {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .text-line {
+    display: flex;
+    align-self: center;
+    white-space: nowrap;
+  }
+
+  .check-link {
+    display: flex;
+    align-self: center;
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+
+  .modal-btn {
+    margin: 0 auto;
   }
 
 }
@@ -1511,8 +1560,28 @@ input[type="checkbox"]:focus + .check-span {
 
   .modal {
     width: 408px;
-    min-height: 584px;
+    max-height: 584px;
   }
 
+  .vertical-line {
+    margin-left: -328px;
+  }
+
+  .modal-check {
+    margin-bottom: 20px;
+  }
+
+  .check-content {
+    max-width: 338px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .modal-btn {
+    margin-top: -16px;
+  }
 }
   
